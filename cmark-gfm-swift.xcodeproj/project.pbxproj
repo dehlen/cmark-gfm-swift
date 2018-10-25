@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BCBCF182181FA4000B312D5 /* cmark_gfm_swift_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCBCF162181FA4000B312D5 /* cmark_gfm_swift_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29C286EB207087CF002C19F7 /* ListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C286D6207087CF002C19F7 /* ListElement.swift */; };
 		29C286EC207087CF002C19F7 /* TextElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C286D7207087CF002C19F7 /* TextElement.swift */; };
 		29C286ED207087CF002C19F7 /* Block+TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C286D8207087CF002C19F7 /* Block+TableRow.swift */; };
@@ -106,6 +107,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BCBCF142181FA4000B312D5 /* cmark_gfm_swift_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cmark_gfm_swift_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BCBCF162181FA4000B312D5 /* cmark_gfm_swift_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark_gfm_swift_macOS.h; sourceTree = "<group>"; };
+		0BCBCF172181FA4000B312D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2911C5612070879600732441 /* cmark_gfm_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cmark_gfm_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2911C5652070879600732441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29C286D6207087CF002C19F7 /* ListElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListElement.swift; sourceTree = "<group>"; };
@@ -199,6 +203,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0BCBCF112181FA3F00B312D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2911C55D2070879600732441 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,11 +228,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BCBCF152181FA4000B312D5 /* cmark-gfm-swift-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				0BCBCF162181FA4000B312D5 /* cmark_gfm_swift_macOS.h */,
+				0BCBCF172181FA4000B312D5 /* Info.plist */,
+			);
+			path = "cmark-gfm-swift-macOS";
+			sourceTree = "<group>";
+		};
 		2911C5572070879600732441 = {
 			isa = PBXGroup;
 			children = (
 				29C286D5207087CF002C19F7 /* Source */,
 				29C28E382070A6F4002C19F7 /* cmark_gfm_swiftTests */,
+				0BCBCF152181FA4000B312D5 /* cmark-gfm-swift-macOS */,
 				2911C5622070879600732441 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -231,6 +252,7 @@
 			children = (
 				2911C5612070879600732441 /* cmark_gfm_swift.framework */,
 				29C28E372070A6F4002C19F7 /* cmark_gfm_swiftTests.xctest */,
+				0BCBCF142181FA4000B312D5 /* cmark_gfm_swift_macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,6 +378,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0BCBCF0F2181FA3F00B312D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BCBCF182181FA4000B312D5 /* cmark_gfm_swift_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2911C55E2070879600732441 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +430,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0BCBCF132181FA3F00B312D5 /* cmark-gfm-swift-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BCBCF192181FA4000B312D5 /* Build configuration list for PBXNativeTarget "cmark-gfm-swift-macOS" */;
+			buildPhases = (
+				0BCBCF0F2181FA3F00B312D5 /* Headers */,
+				0BCBCF102181FA3F00B312D5 /* Sources */,
+				0BCBCF112181FA3F00B312D5 /* Frameworks */,
+				0BCBCF122181FA3F00B312D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cmark-gfm-swift-macOS";
+			productName = "cmark-gfm-swift-macOS";
+			productReference = 0BCBCF142181FA4000B312D5 /* cmark_gfm_swift_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		2911C5602070879600732441 /* cmark-gfm-swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2911C5692070879600732441 /* Build configuration list for PBXNativeTarget "cmark-gfm-swift" */;
@@ -446,6 +494,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Ryan Nystrom";
 				TargetAttributes = {
+					0BCBCF132181FA3F00B312D5 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
 					2911C5602070879600732441 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -470,11 +522,19 @@
 			targets = (
 				2911C5602070879600732441 /* cmark-gfm-swift */,
 				29C28E362070A6F4002C19F7 /* cmark_gfm_swiftTests */,
+				0BCBCF132181FA3F00B312D5 /* cmark-gfm-swift-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0BCBCF122181FA3F00B312D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2911C55F2070879600732441 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -493,6 +553,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0BCBCF102181FA3F00B312D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2911C55C2070879600732441 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,6 +635,66 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0BCBCF1A2181FA4000B312D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GL58CXE5KE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "cmark-gfm-swift-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.davidehlen.cmark-gfm-swift-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		0BCBCF1B2181FA4000B312D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GL58CXE5KE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "cmark-gfm-swift-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.davidehlen.cmark-gfm-swift-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		2911C5672070879600732441 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -621,7 +748,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -676,7 +803,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -700,6 +827,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.whoisryannystrom.cmark-gfm-swift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Source/cmark_gfm";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -722,6 +850,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.whoisryannystrom.cmark-gfm-swift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Source/cmark_gfm";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -759,6 +888,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0BCBCF192181FA4000B312D5 /* Build configuration list for PBXNativeTarget "cmark-gfm-swift-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BCBCF1A2181FA4000B312D5 /* Debug */,
+				0BCBCF1B2181FA4000B312D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2911C55B2070879600732441 /* Build configuration list for PBXProject "cmark-gfm-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
